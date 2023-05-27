@@ -23,11 +23,16 @@ def multiply(number1, number2):
 def divide(number1, number2): 
     return (number1 / number2)
   
+#Function to perform parcentage  
+def parcentage(number1,number2):
+    return (number1 / number2 * 100)
+  
 print("Operation Menu -\n" \ 
         "1. Addition of two numbers\n" \ 
         "2. Subtraction of two numbers\n" \ 
         "3. Multiplication of two numbers\n" \ 
-        "4. Division of two numbers\n") 
+        "4. Division of two numbers\n"
+        "5.percentage of Number\n") 
   
   
 #Taking input from the user  
@@ -51,5 +56,8 @@ elif select == '3':
 elif select == '4': 
     print(num1, "/", num2, "=", 
                     divide(num1, num2)) 
+elif select == '5':
+    print(num1, "%",num2, "=",
+                    parcentage(num1,num2))
 else: 
     print("Invalid input!"
